@@ -22,3 +22,13 @@ class Resume(models.Model):
     end_date = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+
+class Project(models.Model):
+    project_name = models.CharField(max_length=255)
+    evidence = models.CharField(max_length=20)
+    summary = models.TextField()
+    start_date = models.DateTimeField(auto_now=True)
+    end_date = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

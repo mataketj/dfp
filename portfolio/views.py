@@ -12,7 +12,3 @@ def blog(request):
 def projects(request):
       context = {}
       return render(request, 'portfolio/projects.html', context)
-
-def travel(request):
-      context = {}
-      return render(request, 'portfolio/travel.html', context)
